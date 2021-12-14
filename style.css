@@ -10,9 +10,9 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 12px 100px 12px;
-    text-align: center;
+    /* align-items: center; */
+    padding: 20px 12px 100px 40px;
+    /* text-align: center; */
     background-color: #7510F7;
     color: white;
     height: 40vh;
@@ -72,6 +72,45 @@ header p {
     color: #7510F7;
 }
 
+.about-me {
+    padding: 80px 30px 80px 30px;
+    color: #333;
+}
+
+.about-me p {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.about-me h2 {
+    margin-bottom: 40px;
+}
+
+.my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 30px 40px 30px;
+    background-color: #7510F7;
+}
+
+.my-skills h2 {
+    margin-bottom: 40px;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+.my-skills .icon-container {
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 11px 10px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 11px 30px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 11px 30px -13px rgba(0,0,0,0.75);
+}
 @media(min-width: 1200px) {
     .header-img-container {
         width: 15%;
