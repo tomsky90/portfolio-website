@@ -36,10 +36,6 @@ const displayWelcomeMessages = () => {
     setTimeout(displayWelcomeMessages, 80)
 }
 
-const animateCursor = () => {
-
-}
-
 document.addEventListener("DOMContentLoaded", function(event) {
    setTimeout(displayWelcomeMessages, 1000) 
 });
