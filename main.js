@@ -1,3 +1,6 @@
+
+// Header text animation
+
 const welcomeMessages = ['Hi, there!', 'My name is Tom', "I'm a Front-End developer pasionate about creaiting web applications"];
 
 const firstParagraph = document.querySelector('.welcom-txt__first-txt');
@@ -39,3 +42,6 @@ const displayWelcomeMessages = () => {
 document.addEventListener("DOMContentLoaded", function(event) {
    setTimeout(displayWelcomeMessages, 1000) 
 });
+
+
+// section observer for projects section
