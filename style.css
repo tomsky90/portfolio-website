@@ -6,6 +6,8 @@ body {
     background-color: #f7f7f7;
 }
 
+/* header styles */
+
 header {
     position: relative;
     display: flex;
@@ -37,6 +39,30 @@ header p {
     width: 100%;
    border-radius: 50%;
 }
+
+
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    header .welcom-txt {
+        width: 40%;
+    }
+
+    .header-img-container {
+        position: static;
+        width: 30%;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* social links */ 
+
 .social-links-container {
     padding-top: 150px;
     text-align: center;
@@ -73,6 +99,22 @@ header p {
     color: #7510F7;
 }
 
+
+@media(min-width: 500px) {
+    .social-links-container {
+        padding-top: 200px;
+    }
+}
+
+@media(min-width: 600px){
+    .social-links-container {
+        padding-top: 100px;
+    }
+}
+
+
+/* about me section */
+
 .about-me {
     padding: 80px 30px 80px 30px;
     color: #333;
@@ -87,6 +129,34 @@ header p {
 .about-me h2 {
     margin-bottom: 40px;
 }
+
+.about-me .img-wrapper {
+    width: 80%;
+}
+
+.about-me .img-wrapper img {
+    width: 100%;
+}
+
+@media(min-width: 600px) {
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .about-me h2 {
+        width: 100%;
+    }
+
+    .about-me p {
+        width: 50%;
+    }
+    .about-me .img-wrapper {
+        width: 40%;
+    }
+}
+
+/* my skills */
 
 .my-skills {
     display: flex;
@@ -121,6 +191,13 @@ header p {
     margin-top: 5px;
     font-size: 15px;
 }
+
+@media(min-width: 500px) {
+    .my-skills .icon-container {
+        width: 10%;
+    }
+}
+
 .projects {
     padding: 80px 15px;
     color: #333;
