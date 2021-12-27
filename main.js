@@ -45,3 +45,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 // section observer for projects section
+
+const imgsToAppear = document.querySelectorAll('.projects__img-container');
+
+const options = {
+    root: null, 
+    threshold: 1, 
+ };
+
+ const imgsObserver = new IntersectionObserver(function(entries, imgsObserver){
+     entries.forEach(entry => {
+         if(!entry.isIntersecting){
+             return
+         }else {
+            entry.target.classList.add("active");
+             imgsObserver.unobserve(entry.target);
+         }
+     })
+ })
+
+ imgsToAppear.forEach(img => imgsObserver.observe(img));
