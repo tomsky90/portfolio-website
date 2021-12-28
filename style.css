@@ -273,8 +273,9 @@ header p {
 
 .projects__project-container {
     background-color: #fff;
-    padding: 40px 15px;
+    padding: 80px 15px;
     border-radius: 8px;
+    margin-bottom: 100px;
 }
 
 .projects h2 {
