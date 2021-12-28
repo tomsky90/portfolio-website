@@ -78,7 +78,6 @@ const imgsOptions = {
          if(!entry.isIntersecting){
              return
          } else {
-             console.log('dziala')
             entry.target.classList.add("active");
             imgsObserver.unobserve(entry.target);
          }
@@ -86,3 +85,15 @@ const imgsOptions = {
  },txtsOptions)
 
  txtToAppear.forEach(text => txtObserver.observe(text));
+
+//  form validation
+
+const form = document.querySelector('form');
+
+const validateForm = (e) => {
+    e.preventDefault()
+    console.log('dzialam')
+}
+
+
+form.addEventListener('submit', validateForm);
