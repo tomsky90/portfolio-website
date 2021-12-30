@@ -199,14 +199,14 @@
             </article>
         </section>
         <div class="form-wrapper">
-            <form method="post">
+            <form name="contact" method="POST" data-netlify="true">
                 <h2>Contact Me</h2>
                 <div class="inputs-wrapper">
-                    <input placeholder="Your Name" name='name' type="text">
-                    <input placeholder="Your Email" name='email' type="text">
-                    <input placeholder="Subject" name='subject' type="text">
+                    <input required placeholder="Your Name" name='name' type="text">
+                    <input required placeholder="Your Email" name='email' type="email">
+                    <input required placeholder="Subject" name='subject' type="text">
                 </div>
-                <textarea placeholder="Your Message" name='message'></textarea>
+                <textarea required placeholder="Your Message" name='message'></textarea>
                 <button type="submit" name='submit'>Send</button>
             </form>
         </div>

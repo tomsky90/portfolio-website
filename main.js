@@ -85,15 +85,3 @@ const imgsOptions = {
  },txtsOptions)
 
  txtToAppear.forEach(text => txtObserver.observe(text));
-
-//  form validation
-
-const form = document.querySelector('form');
-
-const validateForm = (e) => {
-    e.preventDefault()
-    console.log('dzialam')
-}
-
-
-form.addEventListener('submit', validateForm);
