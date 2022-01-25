@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomasz Kaszycki - Frontend Developer</title>
+    <link href="./style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/7df4c0e0e4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,12 +19,16 @@
         <!-- header -->
         <header>
             <div class="welcom-txt">
-                <p class="welcom-txt__first-txt"></p>
+                <p class="welcom-txt__first-txt">
+                    Hi, there!
+                </p>
                 <h1>
-
+                    My name is Tom
                 </h1>
                 <p class="welcom-txt__second-txt">
+                    I'm a Front-End developer pasionate about creating web applications.
                 </p>
+                <a class="projects-link" href="#projects">Projects</a>
             </div>
             <div class="header-img-container">
                 <img src="./imgs/IMG_20211209_113116.jpg" alt="Tomasz Kaszycki picture" />
@@ -32,37 +36,32 @@
         </header>
         <!-- social links -->
         <section class="social-links-container">
-            <a class="projects-link" href="#projects">Projects</a>
-            <div class="social-links-container__links">
-                <div class="social-links-container__link-container">
-                    <a target="blank" title='github' href="https://github.com/tomsky90"><i
-                            class="fab fa-github-square"></i></a>
-                </div>
-                <div class="social-links-container__link-container">
-                    <a target="blank" title='Frontend mentor' href="https://www.frontendmentor.io/profile/tomsky90"><i
-                            class="fas fa-code"></i></a>
-                </div>
-                <div class="social-links-container__link-container">
-                    <a target="blank" title='email me' href="mailto:kaszyckitomasz@interia.pl"><i
-                            class="far fa-envelope"></i></a>
-                </div>
 
 
-            </div>
         </section>
 
         <!-- about me section -->
         <section class='about-me'>
-            <h2>ABOUT ME</h2>
-            <p>
-                Hi I'm a self taught front-end developer. I have spent last year learning front-end technologies, and i
-                really love writing code, solving problems and bringing designs to live.
-                I think my front-end skills are proficient enough to take the next step and look for my first job, if
-                you are intrested in my work please scroll down and have a look at few of my projects.
-            </p>
+            <div class="about-me__text-container">
+                <h2>ABOUT ME</h2>
+                <p>
+                    Hi I'm a self taught front-end developer. I have spent last year learning front-end technologies,
+                    and I
+                    really love writing code, solving problems and bringing designs to life.
+                </p>
+                <p>
+                    I think my front-end skills are proficient enough to take the next step and look for my first job,
+                    if
+                    you are intrested in my work please scroll down and have a look at few of my projects.
+                </p>
+
+            </div>
+
             <div class="img-wrapper">
                 <img src="./imgs/workplace-5453406_640.png" alt="person working on laptop">
             </div>
+
+
         </section>
         <!-- skills section -->
         <section class="my-skills">
@@ -160,7 +159,7 @@
                         alt="Huddle landing page">
                 </div>
                 <div class="projects__text-container">
-                    <h3>Huddle Landinng Page</h3>
+                    <h3>Huddle Landing Page</h3>
                     <p>It is a solution to
                         <a target="blank"
                             href="https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2">
@@ -198,18 +197,46 @@
                 </div>
             </article>
         </section>
-        <div class="form-wrapper">
-            <form name="contact" method="POST" data-netlify="true">
-                <h2>Contact Me</h2>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <h2>Contact Me</h2>
+
+            <div class="form-wrapper">
                 <div class="inputs-wrapper">
                     <input required placeholder="Your Name" name='name' type="text">
                     <input required placeholder="Your Email" name='email' type="email">
                     <input required placeholder="Subject" name='subject' type="text">
                 </div>
                 <textarea required placeholder="Your Message" name='message'></textarea>
-                <button type="submit" name='submit'>Send</button>
-            </form>
-        </div>
+
+            </div>
+            <div class="btn-wrapper">
+                <button type="submit" name='submit'>SEND</button>
+            </div>
+
+
+            <section class="social-links-container">
+                <div class="social-links-container__links">
+                    <div class="social-links-container__link-container">
+                        <a target="blank" title='github' href="https://github.com/tomsky90"><i
+                                class="fab fa-github-square"></i></a>
+                    </div>
+                    <div class="social-links-container__link-container">
+                        <a target="blank" title='Frontend mentor'
+                            href="https://www.frontendmentor.io/profile/tomsky90"><i class="fas fa-code"></i></a>
+                    </div>
+                    <div class="social-links-container__link-container">
+                        <a target="blank" title='email me' href="mailto:kaszyckitomasz@interia.pl"><i
+                                class="far fa-envelope"></i></a>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+        </form>
+
         <footer>Tomasz Kaszycki &copy; 2021</footer>
     </div>
 
