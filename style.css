@@ -29,13 +29,10 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    padding: 20px 12px 100px 40px;
-    /* text-align: center; */
+    padding: 20px 20px 100px 20px;
     background-color: var(--theme-color);
     color: white;
-    height: 50vh;
-   
+    height: 80vh;
 }
 
 header p {
@@ -49,16 +46,14 @@ header p {
 
 .header-img-container {
     position: absolute;
-    width: 50%;
-    margin-top: 50px;
-    left: 50%;
     bottom: 0;
-    transform: translate(-50%, 50%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
 }
 
 .header-img-container img {
     width: 100%;
-   border-radius: 50%;
 }
 
 header .projects-link {
@@ -100,6 +95,8 @@ header .projects-link:hover {
         header {
             min-height: 25vh;
             padding-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
         .header-img-container {
             margin-top: 0;
@@ -108,7 +105,7 @@ header .projects-link:hover {
 
     @media(min-width: 1200px) {
         .header-img-container {
-            width: 15%;
+            width: 30%;
         }
     }
 }
@@ -117,7 +114,7 @@ header .projects-link:hover {
 /* about me section */
 
 .about-me {
-    padding: 100px 30px 150px 30px;
+    padding: 50px 30px 150px 30px;
     color: var(--text-dark-color);
 }
 
@@ -161,6 +158,11 @@ header .projects-link:hover {
 @media(min-width: 1000px) {
     .about-me .img-wrapper {
         width: 30%;
+    }
+
+    .about-me {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -225,6 +227,8 @@ header .projects-link:hover {
     }
     .my-skills {
         padding-bottom: 150px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -307,6 +311,10 @@ header .projects-link:hover {
 }
 
 @media(min-width: 700px) {
+    .projects {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
     .projects__project-container {
         display: flex;
         justify-content: space-around;
@@ -325,6 +333,8 @@ header .projects-link:hover {
     }
 }
 
+
+
 /* form styles */
 
 form h2 {
@@ -333,7 +343,7 @@ form h2 {
 
 form {
     box-sizing: border-box;
-    background-color: var(--theme-color);
+    background-color: #333;
     color: white;
     width: 100%;
     display: flex;
@@ -356,6 +366,10 @@ input {
     width: 100%;
 }
 
+input:focus {
+    outline: 2px solid orange;
+}
+
 textarea {
     box-sizing: border-box;
     min-width: 100%;
@@ -363,6 +377,10 @@ textarea {
     padding: 15px 20px;
     border-radius: 8px;
     min-height: 150px;
+}
+
+textarea:focus {
+    outline: 2px solid orange;
 }
 
 .btn-wrapper {
@@ -376,7 +394,7 @@ form button {
     margin-top: 30px;
     padding: 10px;
     color: white;
-    background-color: var(--theme-color);
+    background-color: orange;
     border: 2px solid white;
     border-radius: 9999px;
 }
@@ -429,6 +447,14 @@ form button:hover {
     }
 }
 
+@media(min-width: 1000px) {
+    form {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+
 
 /* social links */ 
 
@@ -457,7 +483,7 @@ form button:hover {
 
 .social-links-container__links i {
     font-size: 30px;
-    color: var(--theme-color);
+    color: orange;
 }
 
 @media(min-width: 700px) {
