@@ -465,12 +465,13 @@ form button:hover {
 .social-links-container__links {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 .social-links-container__link-container {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     margin-right: 10px;
-    border-radius: 8px;
+    border-radius: 50%;
     box-shadow: 0px 11px 30px -13px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 11px 30px -13px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 11px 30px -13px rgba(0,0,0,0.75);
@@ -478,12 +479,27 @@ form button:hover {
 }
 
 .social-links-container__link-container:hover {
-    transform: translateY(-10px);
+    scale: 1.1;
+    cursor: pointer;
 }
 
-.social-links-container__links i {
-    font-size: 30px;
-    color: orange;
+.social-links-container__links img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.email-container {
+    background-color: red;
+}
+
+.phone-container {
+    background-color: green;
+}
+
+.github-container {
+    background-color: #010409;
 }
 
 @media(min-width: 700px) {
