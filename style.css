@@ -17,7 +17,7 @@ body {
 }
 
 .page-wrapper {
-    max-width: 1400px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     background-color: var(--background-color);
@@ -189,6 +189,7 @@ header .projects-link:hover {
     flex-direction: column;
     width: 15%;
     padding: 10px 20px;
+    min-height: 73px;
     background-color: white;
     text-align: center;
     color: var(--text-dark-color);
@@ -224,11 +225,13 @@ header .projects-link:hover {
 @media(min-width: 1000px) {
     .my-skills .icon-container {
         width: 5%;
+        min-height: 83px;
     }
     .my-skills {
         padding-bottom: 150px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 150px;
+        padding-right: 150px;
+
     }
 }
 
