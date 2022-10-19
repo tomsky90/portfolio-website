@@ -524,3 +524,24 @@ footer {
     align-items: center;
     background-color: var(--background-color);
 }
+
+
+.page-comming-soon-container {
+    padding-top: 100px;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.comming-soon-img-wrapper {
+    width: 100%;
+}
+
+.comming-soon-img-wrapper img{
+    width: 80%
+}
+
+@media (min-width: 1000px) {
+    .comming-soon-img-wrapper img{
+        width: 60%
+    }
+}

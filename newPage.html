@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomasz Kaszycki - Frontend Developer</title>
+  <meta name="title" content="Tomasz Kaszycki - Frontend Developer" />
+  <meta name="description"
+    content="frontEnd developer creating modern looking, fully responsive websites. Focusing on mobile first approach and SEO producing greate looking websites that are easy to find on google" />
+  <meta name="keywords"
+    content="frontEnd developer, websites, creating websites, react developer, javascript developer" />
+  <link href="./style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- header -->
+    <header>
+      <div class="welcom-txt">
+        <p class="welcom-txt__first-txt">
+          Hi, there!
+        </p>
+        <h1>
+          My name is Tom
+        </h1>
+        <p class="welcom-txt__second-txt">
+          I'm a Front-End developer pasionate about creating web applications.
+        </p>
+        <a class="projects-link" href="#projects">Projects</a>
+      </div>
+      <div class="header-img-container">
+        <img src="./imgs/received_1056996874987269.png" alt="Tomasz Kaszycki picture" />
+      </div>
+    </header>
+    <section class="page-comming-soon-container">
+      <h3>Live Page comming soon!!</h3>
+      <div class="comming-soon-img-wrapper">
+        <img src="./imgs/maintanance.webp" alt="">
+      </div>
+
+    </section>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <h2>Contact Me</h2>
+
+      <div class="form-wrapper">
+        <div class="inputs-wrapper">
+          <input required placeholder="Your Name" name='name' type="text">
+          <input required placeholder="Your Email" name='email' type="email">
+          <input required placeholder="Subject" name='subject' type="text">
+        </div>
+        <textarea required placeholder="Your Message" name='message'></textarea>
+
+      </div>
+      <div class="btn-wrapper">
+        <button type="submit" name='submit'>SEND</button>
+      </div>
+
+
+      <section class="social-links-container">
+        <div class="social-links-container__links">
+          <div title='Visit my Github' class="social-links-container__link-container github-container">
+            <a target="blank" href="https://github.com/tomsky90"><img src="./icons/square-github.svg"
+                alt='github link' /></a>
+          </div>
+          <div title='Give me a Call' class="social-links-container__link-container phone-container">
+            <a title='Phone me' href="tel:07864821468"><img src="./icons/phone-solid.svg" alt='phone me link' /></a>
+          </div>
+          <div title='Email Me' class="social-links-container__link-container email-container">
+            <a target="blank" title='email me' href="mailto:kaszyckitomasz@interia.pl"><img class="email-icon"
+                src="./icons/envelope-solid.svg" alt='email me link' /></a>
+          </div>
+
+
+        </div>
+      </section>
+
+
+    </form>
+
+    <footer>Tomasz Kaszycki &copy; 2021</footer>
+  </div>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
