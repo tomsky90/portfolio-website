@@ -1,3 +1,17 @@
+//mobile nav
+const bars = document.querySelector('.bars');
+const mobileNav = document.querySelector('.mobile-nav')
+const links = document.querySelectorAll('.link-wrapper a')
+
+const toggleMobileNav = () => {
+  mobileNav.classList.toggle('active')
+}
+
+bars.addEventListener('click', toggleMobileNav)
+links.forEach(link => {
+    link.addEventListener('click', toggleMobileNav)
+})
+
 
 // section observer for projects section
 
@@ -40,3 +54,9 @@ const imgsOptions = {
  },txtsOptions)
 
  txtToAppear.forEach(text => txtObserver.observe(text));
+
+
+ //alert
+ window.onload = function() {
+    alert("I am currently working on my website, massive apologize if something dosen't look right.")
+ }
