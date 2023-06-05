@@ -31,7 +31,7 @@ body {
   padding: 0px 0px 100px 0px;
   background-color: var(--theme-color);
   color: white;
-  height: 80vh;
+  height: 100vh;
 }
 
 header .logo-wrapper {
