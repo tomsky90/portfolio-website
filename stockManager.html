@@ -12,7 +12,7 @@
   <meta name="keywords"
     content="frontEnd developer, websites, creating websites, react developer, javascript developer" />
   <link href="./style.css" rel="stylesheet" />
-  <link href="./stockManagerStyles.css" rel="stylesheet" />
+  <link href="./project-page-styles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
 <body>
   <div class="page-wrapper">
     <!-- header -->
-    <header>
+    <header class="project-page__header">
       <div class="project-page logo-wrapper">
         <!-- logo -->
         <div class="logo-img-wrapper">
@@ -42,7 +42,7 @@
             </a>
           </div>
           <div class="link-wrapper">
-            <a href="#projects">
+            <a href="./index.html#projects">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
@@ -52,7 +52,7 @@
             </a>
           </div>
           <div class="link-wrapper">
-            <a alt="" href="#about">
+            <a alt="" href="./index.html#about">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
@@ -62,7 +62,7 @@
             </a>
           </div>
           <div class="link-wrapper">
-            <a alt="" href="#contact">
+            <a alt="" href="./index.html#contact">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
@@ -85,19 +85,19 @@
           </a>
         </div>
         <div class="link-wrapper">
-          <a href="#projects">
+          <a href="./index.html#projects">
             <img alt="" src="./icons/nav-icons/clipboard-check-solid.svg" />
             Projects
           </a>
         </div>
         <div class="link-wrapper">
-          <a alt="" href="#about">
+          <a alt="" href="./index.html#about">
             <img alt="" src="./icons/nav-icons/user-solid.svg" />
             About Me
           </a>
         </div>
         <div class="link-wrapper">
-          <a alt="" href="#contact">
+          <a alt="" href="./index.html#contact">
             <img alt="" src="./icons/nav-icons/phone-volume-solid.svg" />
             Contact
           </a>
@@ -152,19 +152,31 @@
         </div>
 
         <div class="project-page__summary">
-          <p>Go ahead and check it out live, using example accounts.</p>
-        For admin account:</br>
-        User name:</br> admintest@email.com </br>
-        Password:</br> testPassword123* </br>
-        For user account:</br>
-        User name:</br> test@email.com</br>
-        Password:</br> testPassword123*</p>
-        <div class="project-page__projects__links">
-          <a class="projects-link" target="blank"
-            href="https://tomsky90.github.io/Audiophile-ecommerce-website/">Live</a>
-          <a class="projects-link" target="blank"
-            href="https://github.com/tomsky90/Audiophile-ecommerce-website">Github</a>
-        </div>
+          <div class="project-page__summary__txt">
+            <p>Go ahead and check it out live, using example accounts.</p>
+            For admin account:</br>
+            User name:</br> admintest@email.com </br>
+            Password:</br> testPassword123* </br>
+            For user account:</br>
+            User name:</br> test@email.com</br>
+            Password:</br> testPassword123*</p>
+            <div class="project-page__projects__links">
+              <a class="projects-link" target="blank" href="https://lucky-toffee-1e951a.netlify.app/">Live</a>
+              <a class="projects-link" target="blank" href="https://github.com/tomsky90/stock-menager">Github</a>
+            </div>
+          </div>
+          <div class="project-page__summary__tech-stack">
+            <ul>
+              Tech stack includes:
+              <li>React</li>
+              <li>React Router</li>
+              <li>Css</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Mongoose</li>
+              <li>MongoDb</li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
