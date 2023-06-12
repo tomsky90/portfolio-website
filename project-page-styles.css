@@ -161,3 +161,12 @@ main {
     padding-right: 40px;
   }
 }
+
+@media only screen and ( min-width: 1200px ) {
+  .project-page__summary__txt {
+    width: 40%;
+  }
+  .project-page__summary__tech-stack {
+    width: 40%;
+  }
+}
