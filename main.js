@@ -54,9 +54,3 @@ const imgsOptions = {
  },txtsOptions)
 
  txtToAppear.forEach(text => txtObserver.observe(text));
-
-
- //alert
- window.onload = function() {
-    alert("I am currently working on my website, massive apologize if something dosen't look right.")
- }
