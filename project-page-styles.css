@@ -11,6 +11,7 @@
 @media only screen and (min-width: 800px) {
   .project-page .logo-wrapper {
     position: absolute;
+    top: 0;
   }
 }
 
