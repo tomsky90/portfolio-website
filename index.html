@@ -326,11 +326,23 @@
 
       <div class="form-wrapper">
         <div class="inputs-wrapper">
-          <input required placeholder="Your Name" name="name" type="text" />
-          <input required placeholder="Your Email" name="email" type="email" />
-          <input required placeholder="Subject" name="subject" type="text" />
+          <div class="input-wrapper">
+            <label for="name">Name:</label>
+          <input required id="name" placeholder="Your Name" name="name" type="text" />
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Email:</label>
+          <input required placeholder="Your Email" id="email" name="email" type="email" />
+          </div>
+          <div class="input-wrapper">
+            <label for="subject">Subject</label>
+          <input required placeholder="Subject" id="subject" name="subject" type="text" />
+          </div>
         </div>
-        <textarea required placeholder="Your Message" name="message"></textarea>
+        <div class="message-wrapper">
+          <label for="message">Message:</label>
+          <textarea id="message" required placeholder="Your Message" name="message"></textarea>
+        </div>
       </div>
       <div class="btn-wrapper">
         <button type="submit" name="submit">SEND</button>

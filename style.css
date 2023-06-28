@@ -111,6 +111,12 @@ header .projects-link:hover {
   }
 }
 
+@media (min-width: 500px) {
+  .home-page-header {
+    height: 120vh;
+  }
+}
+
 @media (min-width: 600px) {
   header {
     justify-content: space-between;
@@ -220,9 +226,6 @@ header .mobile-nav-bars img {
 
 .mobile-nav {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 50px;
   width: 100%;
   top: 80px;
@@ -238,7 +241,10 @@ header .mobile-nav-bars img {
 }
 
 .mobile-nav .link-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mobile-nav .link-wrapper a img {
@@ -247,9 +253,9 @@ header .mobile-nav-bars img {
 }
 
 .mobile-nav .link-wrapper a {
-  display: flex;
   color: orange;
   text-decoration: none;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -528,10 +534,22 @@ form {
   padding: 50px 35px 100px 30px;
 }
 
+.inputs-wrapper {
+  width: 100%;
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
+.input-wrapper input {
+  margin-top: 10px;
 }
 
 input {
@@ -545,6 +563,14 @@ input {
 
 input:focus {
   outline: 2px solid orange;
+}
+
+.message-wrapper {
+  width: 100%;
+}
+
+.message-wrapper  textarea {
+  margin-top: 10px;
 }
 
 textarea {
@@ -609,9 +635,12 @@ form button:hover {
     margin-bottom: 0px;
   }
 
+  .message-wrapper {
+    width: 50%;
+  }
+
   textarea {
-    min-width: 50%;
-    max-width: 50%;
+    min-height: 220px;
   }
 
   .btn-wrapper {
