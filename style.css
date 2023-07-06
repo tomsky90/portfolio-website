@@ -188,6 +188,16 @@ header .projects-link:hover {
   }
 }
 
+@media (min-width: 1500px) {
+  .header-img-container {
+    width: 30%;
+    left: 80%;
+  }
+  .welcom-txt {
+    margin-left: 50px;
+  }
+}
+
 /* desctop nav */
 .desctop-nav {
   display: none;
@@ -221,6 +231,15 @@ header .projects-link:hover {
   .desctop-nav .link-wrapper a img {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .logo-img-wrapper {
+    margin-left: 50px;
+  }
+  .desctop-nav {
+    margin-right: 50px;
   }
 }
 
