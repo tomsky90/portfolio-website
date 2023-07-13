@@ -105,7 +105,7 @@ header .projects-link:hover {
   color: var(--theme-color);
 }
 
-@media only screen and (min-device-width: 100px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 100px) and (max-device-width: 800px) and (orientation: landscape) {
   .home-page-header {
     height: 200vh;
   }
@@ -116,9 +116,40 @@ header .projects-link:hover {
   }
 }
 
+@media only screen and (min-device-width: 800px) and (max-device-width: 1200px) and (orientation: landscape) {
+  .home-page-header {
+    height: 200vh;
+  }
+
+  .header-img-container {
+    width: 45%;
+    left: 75%;
+  }
+  .home-page-header .welcom-txt p {
+    width: 350px;
+  }
+
+  .home-page-header .welcom-txt {
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-device-width: 1200px) and (max-device-width: 2000px) and (orientation: landscape) {
+  .header-img-container {
+    left: 78%;
+  }
+  .home-page-header .welcom-txt {
+    margin-left: 40px;
+  }
+}
+
 @media (min-width: 380px) and (orientation: portrait) {
   .home-page-header {
     height: 80vh;
+  }
+}
+@media (min-width: 400px) and (orientation: portrait) {
+  .home-page-header {
+    height: 100vh;
   }
 }
 
@@ -181,7 +212,7 @@ header .projects-link:hover {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1300px) and (orientation: portrait) {
   .header-img-container {
     width: 30%;
     left: 60%;
@@ -502,22 +533,6 @@ header .mobile-nav-bars img {
   width: 100%;
 }
 
-/* .projects__imgs-wrapper {
-  position: relative;
-}
-.projects__img-container .phone {
-  width: 30%;
-}
-
-.projects__img-container .tablet {
-  width: 30%;
-}
-
-.projects__img-container .pc {
-  position: absolute;
-  width: 80%;
-} */
-
 @media (min-width: 600px) {
   .projects {
     padding-left: 40px;
@@ -532,7 +547,8 @@ header .mobile-nav-bars img {
   }
   .projects__project-container {
     display: flex;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-evenly;
     padding-top: 100px;
   }
 
@@ -545,6 +561,18 @@ header .mobile-nav-bars img {
   }
   .projects__img-container {
     width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects__text-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .projects__text-container {
+    width: 30%;
   }
 }
 
