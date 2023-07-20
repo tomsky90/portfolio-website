@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/7df4c0e0e4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -161,51 +165,160 @@
       <!-- skills section -->
       <section id="skills" class="my-skills">
         <h2>SKILLS</h2>
-        <div class="icon-container">
-          <img src="./icons/html.svg" alt="html icon" />
-          <span>HTML</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/css.svg" alt="css icon" />
-          <span>CSS</span>
-        </div>
-        <div class="icon-container">
-          <img
-            src="./icons/javascript-programming-language.svg"
-            alt="java script icon"
-          />
-          <span>JS</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/git.svg" alt="git icon" />
-          <span>GIT</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/bootstrap-4.svg" alt="bootstrap icon" />
-          <span>BS</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/react-js.svg" alt="react icon" />
-          <span>React</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/sass.svg" alt="sass icon" />
-          <span>SASS</span>
-        </div>
-        <div class="icon-container">
-          <img
-            src="./icons/visual-studio-code.svg"
-            alt="visual studio code icon"
-          />
-          <span>VSC</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/nodejs-seeklogo.com.svg" alt="node js icon" />
-          <span>Node</span>
-        </div>
-        <div class="icon-container">
-          <img src="./icons/mongodb-seeklogo.com.svg" alt="mongodb icon" />
-          <span>Mongo</span>
+        <button class="my-skills__slider-wrapper__prev-btn slider-btn">
+          <i class="fa fa-solid fa-angle-left"></i>
+        </button>
+        <button class="my-skills__slider-wrapper__next-btn slider-btn">
+          <i class="fa fa-solid fa-angle-right"></i>
+        </button>
+        <div class="my-skills__slider-wrapper">
+          <div class="slider">
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/html.svg" alt="html icon" />
+              </div>
+              <div class="slide__text">
+                <h3>HTML</h3>
+                If you want your website to be easy to find and accessible, it
+                is important to create semantic and well-organized HTML code. I
+                have an advanced knowledge of HTML and I am well-versed in all
+                the basic elements and structures of HTML. I create readable and
+                accessible web pages, taking care of header hierarchy, section
+                tags, lists, links, and forms. I am also familiar with advanced
+                techniques such as embedding multimedia, creating forms, and
+                integrating external libraries and scripts.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/css.svg" alt="css icon" />
+              </div>
+              <div class="slide__text">
+                <h3>Css</h3>
+                I have extensive knowledge of Css , and understand all the
+                fundamental concepts of creating responsive and flexible
+                layouts. I customize styling, to ensure consistent appearance
+                across different devices and browsers. I can create advanced
+                visual effects such as animations, transitions, shadows, and
+                gradients. When creating user interfaces, I am making sure my
+                Css code is well organized, and optimaized.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img
+                  src="./icons/javascript-programming-language.svg"
+                  alt="java script icon"
+                />
+              </div>
+              <div class="slide__text">
+                <h3>JavaScript</h3>
+                I am familiar with key concepts and programming techniques in
+                JavaScript, such as DOM manipulation, event handling,
+                asynchronous programming, and building user interfaces. I can
+                create efficient and interactive websites and apps, which can
+                interact with third party API's. My JavaScript skills allow me
+                to write efficient and readable code that is easy to maintain
+                and expand.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/git.svg" alt="git icon" />
+              </div>
+              <div class="slide__text">
+                <h3>Git</h3>
+                I have a good level of knowledge about basic concepts of GIT,
+                such as repositories, branches, commits, pull requests, and
+                merging changes. I can create, clone, and manage GIT
+                repositories both locally and on remote servers, and also
+                effectively utilize branches to create and manage different
+                versions of a project.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/bootstrap-4.svg" alt="bootstrap icon" />
+              </div>
+              <div class="slide__text">
+                <h3>Bootstrap</h3>
+                With bootstrap, I can quickly create responsive and visually
+                appealing user interfaces. Bootstrap ensures consistent look for
+                UI's built with it, thanks to its support for all major
+                browsers. Additionaly I can customize styling using Sass,
+                allowing me to create personalized and unique interface designs.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/react-js.svg" alt="react icon" />
+              </div>
+              <div class="slide__text">
+                <h3>React</h3>
+                I really like working with React, because it allows me to easily
+                create advanced, responsive and interactive apps. I am familiar
+                with main concepts, like components creation, state management,
+                hooks as well as handling routing, which allows me to create
+                single page apps. My skills also include integrating with
+                external libraries, and communicating with third pary API's.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/sass.svg" alt="sass icon" />
+              </div>
+              <div class="slide__text">
+                <h3>Sass/Scss</h3>
+                I am familiar with Sass/Scss syntax and I can create nested
+                selectors, variables, functions, and mixins. I think Scss makes
+                it even easier to implement BEM methodology, thanks to nested
+                selectors.By using Sass/Scss, I can write more modular and
+                efficient CSS code that is easy to maintain and extend.
+              </div>
+            </div>
+
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img src="./icons/nodejs-seeklogo.com.svg" alt="node js icon" />
+              </div>
+              <div class="slide__text">
+                <h3>Node</h3>
+                I am familiar with Sass/Scss syntax and I can create nested
+                selectors, variables, functions, and mixins. I think Scss makes
+                it even easier to implement BEM methodology, thanks to nested
+                selectors.By using Sass/Scss, I can write more modular and
+                efficient CSS code that is easy to maintain and extend.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img
+                  src="./icons/mongodb-seeklogo.com.svg"
+                  alt="mongodb icon"
+                />
+              </div>
+              <div class="slide__text">
+                <h3>MongoDb</h3>
+                I can create Schemas for data. I know how to carry out
+                operations like, updating, insertion and deletion of data in
+                mongoDb Atlas, using mongoose.
+              </div>
+            </div>
+            <div class="my-skills__slider-wrapper__slide">
+              <div class="icon-container">
+                <img
+                  src="./icons/administrator-developer-icon.svg"
+                  alt="person working on laptop"
+                />
+              </div>
+              <div class="slide__text">
+                <h3>Other skills</h3>
+                In addition to previously mentioned skills, I know how to
+                perform some basic image and video editing tasks, like cropping,
+                optimizing, changing formats.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- projects section -->
@@ -242,7 +355,7 @@
           <div class="projects__text-container">
             <h3>Online Shop</h3>
             <p>
-              I have build this project, as a part of the recruitment process. I
+              I have built this project, as a part of the recruitment process. I
               was supplied with a design in figma and graphQl server, my task
               was to build: Home page, category page, product page and cart
               page, using React. As part of the task I had to use class
@@ -407,7 +520,52 @@
       <form id="contact" name="contact" method="POST" data-netlify="true">
         <h2>Contact Me</h2>
 
+        <section class="social-links-container">
+          <p>
+            Are you looking for a new talent for your company, or maybe you want
+            to create your own website/application and you need my help? Feel
+            free to contact me:
+          </p>
+          <div class="social-links-container__links">
+            <div
+              title="Give me a Call"
+              class="social-links-container__link-container phone-container"
+            >
+              <p>
+                Phone:
+                <a title="Phone me" href="tel:07864821468">07864821468</a>
+              </p>
+            </div>
+            <div
+              title="Email Me"
+              class="social-links-container__link-container email-container"
+            >
+              <p>
+                Email me:
+                <a
+                  target="blank"
+                  title="email me"
+                  href="mailto:kaszyckitomasz@interia.pl"
+                  >kaszyckitomasz@interia.pl</a
+                >
+              </p>
+            </div>
+            <div
+              title="Visit my Github"
+              class="social-links-container__link-container github-container"
+            >
+              <p>
+                Check my github:
+                <a target="blank" href="https://github.com/tomsky90"
+                  >https://github.com/tomsky90</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+
         <div class="form-wrapper">
+          <h3>Or simply use the contact form:</h3>
           <div class="inputs-wrapper">
             <div class="input-wrapper">
               <label for="name">Name:</label>
@@ -449,50 +607,16 @@
               name="message"
             ></textarea>
           </div>
-        </div>
-        <div class="btn-wrapper">
-          <button type="submit" name="submit">SEND</button>
-        </div>
-
-        <section class="social-links-container">
-          <div class="social-links-container__links">
-            <div
-              title="Visit my Github"
-              class="social-links-container__link-container github-container"
-            >
-              <a target="blank" href="https://github.com/tomsky90"
-                ><img src="./icons/square-github.svg" alt="github link"
-              /></a>
-            </div>
-            <div
-              title="Give me a Call"
-              class="social-links-container__link-container phone-container"
-            >
-              <a title="Phone me" href="tel:07864821468"
-                ><img src="./icons/phone-solid.svg" alt="phone me link"
-              /></a>
-            </div>
-            <div
-              title="Email Me"
-              class="social-links-container__link-container email-container"
-            >
-              <a
-                target="blank"
-                title="email me"
-                href="mailto:kaszyckitomasz@interia.pl"
-                ><img
-                  class="email-icon"
-                  src="./icons/envelope-solid.svg"
-                  alt="email me link"
-              /></a>
-            </div>
+          <div class="btn-wrapper">
+            <button type="submit" name="submit">SEND</button>
           </div>
-        </section>
+        </div>
       </form>
 
       <footer>Tomasz Kaszycki &copy; 2021</footer>
     </div>
 
     <script src="./main.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>

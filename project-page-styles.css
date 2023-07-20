@@ -34,7 +34,7 @@ main {
   text-decoration: none;
   color: #fff;
   margin-right: 10px;
-  padding: 3px 15px;
+  padding: 10px 20px;
   border: 1px solid #fff;
   border-radius: 999px;
 }
@@ -58,6 +58,7 @@ main {
   .project-page__hero-section {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   .project-page__hero-img-wrapper {
@@ -167,6 +168,9 @@ main {
 @media only screen and (min-width: 1200px) {
   .project-page__summary__txt {
     width: 40%;
+  }
+  .project-page__projects__links {
+    margin-top: 40px;
   }
   .project-page__summary__tech-stack {
     width: 40%;
