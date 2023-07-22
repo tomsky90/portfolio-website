@@ -586,12 +586,16 @@ header .mobile-nav-bars img {
 
 @media (min-width: 1000px) {
   .my-skills .icon-container {
+    width: 20%;
     min-height: 83px;
   }
   .my-skills {
     padding-bottom: 150px;
     padding-left: 150px;
     padding-right: 150px;
+  }
+  .slide__text {
+    margin-right: 40px;
   }
   .my-skills__slider-wrapper__prev-btn {
     left: 20px;
@@ -604,7 +608,6 @@ header .mobile-nav-bars img {
 
 @media (min-width: 1200px) {
   .my-skills .icon-container {
-    width: 20%;
     margin-top: 20px;
   }
   .my-skills__slider-wrapper__slide {
