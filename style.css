@@ -542,7 +542,7 @@ header .mobile-nav-bars img {
 
 @media (min-width: 500px) {
   .my-skills .icon-container {
-    width: 30%;
+    width: 25%;
   }
   .my-skills__slider-wrapper__slide {
     min-width: 95%;
@@ -586,7 +586,6 @@ header .mobile-nav-bars img {
 
 @media (min-width: 1000px) {
   .my-skills .icon-container {
-    width: 20%;
     min-height: 83px;
   }
   .my-skills {
