@@ -16,6 +16,7 @@
     />
     <link href="./style.css" rel="stylesheet" />
     <link href="./project-page-styles.css" rel="stylesheet" />
+    <link href="./allProjects.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -127,100 +128,34 @@
         </nav>
       </header>
       <!-- main container -->
-      <main>
-        <div>
-          <!-- hero section -->
-          <div class="project-page__hero-section">
-            <div class="project-page__hero-img-wrapper">
-              <img alt="hero section" src="./imgs/ScandiWeb/home.jpg" />
-            </div>
-            <div class="project-page__hero-description">
-              <h1>Online Shop</h1>
-              <p>
-                This project was built as a part of the recruitment process. I
-                was supplied with a design in figma and a graphical server. I
-                think it was a really cool project to work on, and I have
-                learned quite a lot from it, Especially on graphQl as I never
-                worked with it before, but also on how to implement redux.
-                Design was only supplied for desctop screen, and responsivenes
-                was not required, so the website is not responsive.
-              </p>
-            </div>
-          </div>
-          <div class="project-page__tile">
-            <div class="project-page__tile__img-wrapper">
+      <main class="all-projects-page-main">
+        <h1>Have a look at few more things I have built.</h1>
+        <div class="all-projects-page-main__projects-container">
+          <div class="project-container card">
+            <div class="card__img-wrapper">
               <img
-                alt="application screenshot"
-                src="./imgs/ScandiWeb/product.jpg"
+                src="./imgs/furniture-shop/tomsky90.github.io_furniture-shop-landing-page_.webp"
+                alt=""
               />
             </div>
-            <div class="project-page__tile__txt-wrapper">
+            <div class="card__text-wrapper">
+              <h3>Furniture</h3>
               <p>
-                Here you can see a product page, where the customer needs to
-                select the attributes like: Size, color or disc space for
-                example depending on the type of item. Once all attributes are
-                selected item can be added to cart.
+                Copy of a website I created a while back. I decided to use
+                pseudo elements to re create lines around images, what helped mi
+                to better understand how to use pseudo elements, and I had a
+                chance to create simple slider in JavaScript.
               </p>
-            </div>
-          </div>
-
-          <div class="project-page__tile">
-            <div class="project-page__tile__img-wrapper">
-              <img
-                alt="application screenshot"
-                src="./imgs/ScandiWeb/mini-cart.jpg"
-              />
-            </div>
-            <div class="project-page__tile__txt-wrapper">
-              <p>
-                Users can display mini cart by clicking on cart icon, where they
-                will find a gallery for each item, and all other information
-                such as selected color and size. By clicking on dollar sign
-                users can select the currency they would like to pay in.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-page__tile">
-            <div class="project-page__tile__img-wrapper">
-              <img
-                alt="application screenshot"
-                src="./imgs/ScandiWeb/cart.jpg"
-              />
-            </div>
-            <div class="project-page__tile__txt-wrapper">
-              <p>
-                On the cart page users can display all the information for each
-                product like in mini cart, but they can also see all avalibal
-                images, and see a better breakdown of price, for example how
-                much tax they would pay.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-page__tile">
-            <div class="project-page__summary__txt">
-              <p>
-                Currently I don't have a live website for this project, but I
-                would like to invite you to visit github page
-              </p>
-              <div class="project-page__projects__links">
+              <div class="card__links-wrapper">
                 <a
-                  class="summary-link"
-                  target="blank"
-                  href="https://github.com/tomsky90/tomasz-kaszycki-react-test"
+                  href="https://tomsky90.github.io/furniture-shop-landing-page/"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/tomsky90/furniture-shop-landing-page"
                   >Github</a
                 >
               </div>
-            </div>
-            <div class="project-page__summary__tech-stack">
-              <ul>
-                Tech stack includes:
-                <li>React</li>
-                <li>React Router</li>
-                <li>SASS/SCSS</li>
-                <li>React Redux</li>
-              </ul>
             </div>
           </div>
         </div>

@@ -1,0 +1,41 @@
+.all-projects-page-main {
+  padding: 20px;
+}
+
+.all-projects-page-main h1 {
+  color: var(--text-dark-color);
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card__img-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__img-wrapper img {
+  width: 100%;
+}
+
+.card__text-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 40px;
+}
+.card__links-wrapper a {
+  border: 2px solid var(--theme-color);
+  border-radius: 999px;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: var(--theme-color);
+}
+
+.card__links-wrapper a:hover {
+  background-color: var(--theme-color);
+  color: #fff;
+}

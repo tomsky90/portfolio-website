@@ -266,6 +266,30 @@ header .projects-link:hover {
   display: none;
 }
 
+.projects-links {
+  position: relative;
+}
+
+.link-wrapper__sub-links {
+  display: none;
+  margin-top: 10px;
+}
+
+.link-wrapper__sub-links.active {
+  display: block;
+  position: absolute;
+  background-color: #ecebe9;
+}
+
+.link-wrapper__sub-links a {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.link-wrapper__sub-links.active a:hover {
+  color: #292a2d;
+}
+
 @media only screen and (min-width: 800px) {
   .desctop-nav {
     display: -webkit-box;
@@ -279,7 +303,8 @@ header .projects-link:hover {
       margin-right: 80px;
     }
   }
-  .desctop-nav .link-wrapper a {
+  .desctop-nav .link-wrapper a,
+  .desctop-nav .link-wrapper button {
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -294,6 +319,10 @@ header .projects-link:hover {
     margin-right: 15px;
     color: orange;
     fill: currentColor;
+    border: none;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
   }
 
   .desctop-nav .link-wrapper svg {
@@ -301,7 +330,8 @@ header .projects-link:hover {
     height: 20px;
   }
 
-  .desctop-nav .link-wrapper a:hover {
+  .desctop-nav .link-wrapper a:hover,
+  .desctop-nav .link-wrapper button:hover {
     color: #292a2d;
   }
 
@@ -362,15 +392,38 @@ header .mobile-nav-bars img {
   margin-right: auto;
 }
 
-.mobile-nav .link-wrapper a img {
+.mobile-nav .link-wrapper a img,
+.mobile-nav .link-wrapper button img {
   width: 15px;
   margin-right: 5px;
 }
 
-.mobile-nav .link-wrapper a {
+.mobile-nav .link-wrapper button {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.mobile-nav .link-wrapper a,
+.mobile-nav .link-wrapper button {
   color: orange;
   text-decoration: none;
   font-size: 20px;
+}
+
+.link-wrapper__mobile-sub-links {
+  display: none;
+}
+
+.link-wrapper__mobile-sub-links.active {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.mobile-nav .link-wrapper__mobile-sub-links a {
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 @media only screen and (min-width: 600px) {

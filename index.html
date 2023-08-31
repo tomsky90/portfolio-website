@@ -50,8 +50,8 @@
                 Home
               </a>
             </div>
-            <div class="link-wrapper">
-              <a href="#projects">
+            <div class="link-wrapper projects-links">
+              <button>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                   <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                   <path
@@ -59,7 +59,11 @@
                   />
                 </svg>
                 Projects
-              </a>
+              </button>
+              <div class="link-wrapper__sub-links">
+                <a href="./allProjects.html">All</a>
+                <a href="./#projects">Featured</a>
+              </div>
             </div>
             <div class="link-wrapper">
               <a alt="" href="#about">
@@ -99,11 +103,15 @@
               Home
             </a>
           </div>
-          <div class="link-wrapper">
-            <a href="#projects">
+          <div class="link-wrapper mobile-projects-links">
+            <button>
               <img alt="" src="./icons/nav-icons/clipboard-check-solid.svg" />
               Projects
-            </a>
+            </button>
+            <div class="link-wrapper__mobile-sub-links">
+              <a href="./allProjects.html">All</a>
+              <a href="./#projects">Featured</a>
+            </div>
           </div>
           <div class="link-wrapper">
             <a alt="" href="#about">
@@ -163,10 +171,16 @@
       <!-- skills section -->
       <section id="skills" class="my-skills">
         <h2>SKILLS</h2>
-        <button class="my-skills__slider-wrapper__prev-btn slider-btn">
+        <button
+          aria-label="previous slide"
+          class="my-skills__slider-wrapper__prev-btn slider-btn"
+        >
           <i class="fa fa-solid fa-angle-left"></i>
         </button>
-        <button class="my-skills__slider-wrapper__next-btn slider-btn">
+        <button
+          aria-label="next slide"
+          class="my-skills__slider-wrapper__next-btn slider-btn"
+        >
           <i class="fa fa-solid fa-angle-right"></i>
         </button>
         <div class="my-skills__slider-wrapper">
