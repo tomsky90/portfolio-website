@@ -4,11 +4,13 @@
 
 .all-projects-page-main h1 {
   color: var(--text-dark-color);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .card {
   background-color: #fff;
-  padding: 10px;
+  padding: 30px 10px;
   border-radius: 8px;
 }
 
@@ -27,6 +29,11 @@
   padding-right: 10px;
   margin-top: 40px;
 }
+
+.card__links-wrapper {
+  margin-top: 40px;
+}
+
 .card__links-wrapper a {
   border: 2px solid var(--theme-color);
   border-radius: 999px;
@@ -38,4 +45,15 @@
 .card__links-wrapper a:hover {
   background-color: var(--theme-color);
   color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+  .card {
+    display: flex;
+  }
+
+  .card__text-wrapper {
+    width: 60%;
+    margin-top: 0;
+  }
 }

@@ -56,7 +56,7 @@ main {
 .project-page__hero-section {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -90,7 +90,7 @@ main {
 /* tile */
 
 .project-page__tile {
-  padding: 60px 15px;
+  padding: 100px 15px;
 }
 
 .project-page__tile:nth-of-type(even) {
@@ -181,6 +181,10 @@ main {
 .summary-link {
   background-color: var(--theme-color);
   padding: 5px 15px;
+}
+
+.project-page__projects__links {
+  margin-top: 40px;
 }
 
 @media only screen and (min-width: 700px) {
