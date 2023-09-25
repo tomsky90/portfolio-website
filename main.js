@@ -1,7 +1,9 @@
 //mobile nav
-const bars = document.querySelector(".bars");
-const mobileNav = document.querySelector(".mobile-nav");
-const links = document.querySelectorAll(".link-wrapper a");
+const mobileNavToggle = document.querySelector(".mobile-nav__toggle");
+const mobileNav = document.querySelector(".mobile-nav__menu");
+const mobileNavOpenBtn = document.querySelector(".mobile-nav__bars");
+const mobileNavCloseBtn = document.querySelector(".mobile-nav__close-btn");
+const links = document.querySelectorAll(".mobile-nav__link");
 const mobileProjectsLink = document.querySelector(".mobile-projects-links");
 const mobileSubLinks = document.querySelector(
   ".link-wrapper__mobile-sub-links"
@@ -12,10 +14,13 @@ const showMobileLinks = () => {
 };
 
 const toggleMobileNav = () => {
+  console.log("active");
+  mobileNavOpenBtn.classList.toggle("active");
+  mobileNavCloseBtn.classList.toggle("active");
   mobileNav.classList.toggle("active");
 };
 
-bars.addEventListener("click", toggleMobileNav);
+mobileNavToggle.addEventListener("click", toggleMobileNav);
 links.forEach((link) => {
   link.addEventListener("click", toggleMobileNav);
 });
