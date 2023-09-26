@@ -4,38 +4,38 @@ const mobileNav = document.querySelector(".mobile-nav__menu");
 const mobileNavOpenBtn = document.querySelector(".mobile-nav__bars");
 const mobileNavCloseBtn = document.querySelector(".mobile-nav__close-btn");
 const links = document.querySelectorAll(".mobile-nav__link");
-const mobileProjectsLink = document.querySelector(".mobile-projects-links");
-const mobileSubLinks = document.querySelector(
-  ".link-wrapper__mobile-sub-links"
+const mobileSubMenuToggler = document.querySelector(
+  ".mobile-nav__dropdown-toggle"
 );
+const mobileSubMenu = document.querySelector(".mobile-nav__submenu");
 
-const showMobileLinks = () => {
-  mobileSubLinks.classList.toggle("active");
+const showMobileSubmenu = () => {
+  mobileSubMenu.classList.toggle("active");
 };
 
 const toggleMobileNav = () => {
-  console.log("active");
   mobileNavOpenBtn.classList.toggle("active");
   mobileNavCloseBtn.classList.toggle("active");
   mobileNav.classList.toggle("active");
 };
 
 mobileNavToggle.addEventListener("click", toggleMobileNav);
-links.forEach((link) => {
-  link.addEventListener("click", toggleMobileNav);
-});
+mobileSubMenuToggler.addEventListener("click", showMobileSubmenu);
+// links.forEach((link) => {
+//   link.addEventListener("click", toggleMobileNav);
+// });
 
-mobileProjectsLink.addEventListener("click", showMobileLinks);
+// mobileProjectsLink.addEventListener("click", showMobileLinks);
 
-//show sublinks
-const projectsLink = document.querySelector(".projects-links");
-const subLinks = document.querySelector(".link-wrapper__sub-links");
+// //show sublinks
+// const projectsLink = document.querySelector(".projects-links");
+// const subLinks = document.querySelector(".link-wrapper__sub-links");
 
-const showLinks = () => {
-  subLinks.classList.toggle("active");
-};
+// const showLinks = () => {
+//   subLinks.classList.toggle("active");
+// };
 
-projectsLink.addEventListener("click", showLinks);
+// projectsLink.addEventListener("click", showLinks);
 
 // section observer for projects section
 

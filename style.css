@@ -115,6 +115,10 @@ body {
   color: var(--orange);
 }
 
+.desktop-nav__link:hover .desktop-nav__dropdown-arrow {
+  transform: rotate(-180deg);
+}
+
 .desktop-nav__link--active {
   color: var(--orange);
 }
@@ -180,12 +184,35 @@ body {
   }
 }
 
+.mobile-nav__dropdown-toggle,
 .mobile-nav__link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--text-dark-color);
 }
 
 .mobile-nav__link--active {
   color: var(--orange);
+}
+
+.mobile-nav__dropdown-arrow {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.mobile-nav__submenu {
+  display: none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.mobile-nav__submenu .mobile-nav__link {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.mobile-nav__submenu.active {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
 }
