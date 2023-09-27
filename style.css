@@ -216,3 +216,7 @@ body {
   flex-direction: column;
   row-gap: 5px;
 }
+
+.mobile-nav__dropdown-arrow.active {
+  transform: rotate(180deg);
+}

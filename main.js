@@ -8,9 +8,13 @@ const mobileSubMenuToggler = document.querySelector(
   ".mobile-nav__dropdown-toggle"
 );
 const mobileSubMenu = document.querySelector(".mobile-nav__submenu");
+const mobileNavDropdownArrow = document.querySelector(
+  ".mobile-nav__dropdown-arrow"
+);
 
 const showMobileSubmenu = () => {
   mobileSubMenu.classList.toggle("active");
+  mobileNavDropdownArrow.classList.toggle("active");
 };
 
 const toggleMobileNav = () => {
@@ -21,23 +25,6 @@ const toggleMobileNav = () => {
 
 mobileNavToggle.addEventListener("click", toggleMobileNav);
 mobileSubMenuToggler.addEventListener("click", showMobileSubmenu);
-// links.forEach((link) => {
-//   link.addEventListener("click", toggleMobileNav);
-// });
-
-// mobileProjectsLink.addEventListener("click", showMobileLinks);
-
-// //show sublinks
-// const projectsLink = document.querySelector(".projects-links");
-// const subLinks = document.querySelector(".link-wrapper__sub-links");
-
-// const showLinks = () => {
-//   subLinks.classList.toggle("active");
-// };
-
-// projectsLink.addEventListener("click", showLinks);
-
-// section observer for projects section
 
 const imgsToAppear = document.querySelectorAll(".projects__img-container");
 const txtToAppear = document.querySelectorAll(".projects__text-container");
