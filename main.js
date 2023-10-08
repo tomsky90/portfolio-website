@@ -26,6 +26,22 @@ const toggleMobileNav = () => {
 mobileNavToggle.addEventListener("click", toggleMobileNav);
 mobileSubMenuToggler.addEventListener("click", showMobileSubmenu);
 
+// ----------------------------------------------------------------------------------------------
+//slider
+const swiper = new Swiper(".mySwiper", {
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 const imgsToAppear = document.querySelectorAll(".projects__img-container");
 const txtToAppear = document.querySelectorAll(".projects__text-container");
 

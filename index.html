@@ -20,6 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7df4c0e0e4.js"
       crossorigin="anonymous"
@@ -115,23 +121,57 @@
     <section class="hero-section">
       <div class="hero-section__wrapper container">
         <div class="hero-section__txt-wrapper">
-          <h1 class="hero-section__heading">
-            Welcome to my website! I'm Tomasz Kaszycki, a Front-End developer
-          </h1>
+          <h1 class="hero-section__heading">Hi! I'm Tomasz Kaszycki</h1>
           <p class="hero-section__txt">
-            Passionate about crafting captivating web experiences. Explore my
-            portfolio and join me in creating user-friendly websites. I'm
-            excited to have you here!
+            Front-End developer passionate about crafting user-friendly web
+            experiences. Explore my portfolio and join me in creating
+            captivating websites. Excited to have you here!
           </p>
           <a class="hero-section__projects-link" href="#projects">Projects</a>
         </div>
         <div class="hero-section__img-container">
-          <div class="hero-section__background-blob"></div>
+          <img
+            class="hero-section__background-blob__svg hero-section__background-blob__svg--one"
+            src="./imgs/blob.svg"
+            alt=""
+          />
+
+          <img
+            class="hero-section__background-blob__svg hero-section__background-blob__svg--two"
+            src="./imgs/blob.svg"
+            alt=""
+          />
+
           <img
             class="hero-section__img"
             src="./imgs/received_1056996874987269.png"
             alt="Tomasz Kaszycki picture"
           />
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="skills__heading">SKILLS</h2>
+
+        <div class="skills__slider-wrapper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </section>
