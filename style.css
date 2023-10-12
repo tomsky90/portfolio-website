@@ -377,16 +377,15 @@ body {
 }
 
 .skills__img-tile {
-  width: 60%;
+  width: 55%;
   background-image: url(./imgs/screen.png);
   background-repeat: no-repeat;
   padding-top: 50px;
-  padding-left: 100px;
+  padding-left: 70px;
 }
 
 .skills__skill-display {
   width: 70%;
-  font-size: 18px;
   line-height: 1.5;
 }
 
