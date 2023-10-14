@@ -43,6 +43,11 @@ const skills = {
     "I have a foundational knowledge of Node.js, primarily focusing on server-side development and API creation. While my experience is at a basic level, I am familiar with asynchronous programming and event-driven architecture. I have practical experience working with MongoDB, npm packages, and utilizing Express.js for web server development. I look forward to further expanding my expertise in Node.js in future projects",
   mongodb:
     "I am proficient in creating data schemas and conducting various data operations, including updates, insertions, and deletions, using MongoDB Atlas and Mongoose. I am also committed to continually enhancing and expanding my skills in this area",
+  image:
+    "In addition to the previously mentioned skills, I have a basic knowledge of image and video editing, and I'm familiar with tools like GIMP and Photopea. I can perform basic tasks such as cropping, optimization, and format conversion",
+  php: "I am currently volunteering on a project to build a new WordPress theme for a charity using PHP, among other technologies. Through this experience, I have acquired a foundational understanding of PHP and its basics. I am enthusiastic about further expanding my expertise in this programming language",
+  wordpress:
+    "As part of my volunteering efforts, I have had the opportunity to learn and work with WordPress. We are currently developing a new WordPress theme for a charity project. This experience has allowed me to gain valuable insights into WordPress, its theme development, and customization. I am eager to further enhance my skills and contribute effectively to this meaningful cause",
 };
 
 const skillsDisplay = document.querySelector(".skills__skill-display");
