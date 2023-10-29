@@ -347,6 +347,8 @@ body {
 }
 
 .hero-section__projects-link {
+  position: relative;
+  z-index: 10;
   padding: 7px 20px;
   background-color: var(--orange);
   color: #fff;
@@ -638,8 +640,6 @@ body {
   -webkit-transition: linear 0.5s;
   -o-transition: linear 0.5s;
   transition: linear 0.5s;
-  -webkit-box-shadow: 0px 15px 21px 0px rgba(0, 0, 0, 0.32);
-  box-shadow: 0px 15px 21px 0px rgba(0, 0, 0, 0.32);
 }
 
 @media only screen and (max-width: 1024px) {

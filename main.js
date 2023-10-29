@@ -4,18 +4,6 @@ const mobileNav = document.querySelector(".mobile-nav__menu");
 const mobileNavOpenBtn = document.querySelector(".mobile-nav__bars");
 const mobileNavCloseBtn = document.querySelector(".mobile-nav__close-btn");
 const links = document.querySelectorAll(".mobile-nav__link");
-const mobileSubMenuToggler = document.querySelector(
-  ".mobile-nav__dropdown-toggle"
-);
-const mobileSubMenu = document.querySelector(".mobile-nav__submenu");
-const mobileNavDropdownArrow = document.querySelector(
-  ".mobile-nav__dropdown-arrow"
-);
-
-const showMobileSubmenu = () => {
-  mobileSubMenu.classList.toggle("active");
-  mobileNavDropdownArrow.classList.toggle("active");
-};
 
 const toggleMobileNav = () => {
   mobileNavOpenBtn.classList.toggle("active");
@@ -24,7 +12,6 @@ const toggleMobileNav = () => {
 };
 
 mobileNavToggle.addEventListener("click", toggleMobileNav);
-mobileSubMenuToggler.addEventListener("click", showMobileSubmenu);
 
 // ----------------------------------------------------------------------------------------------
 //skills
