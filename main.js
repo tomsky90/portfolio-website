@@ -1,26 +1,19 @@
 //links
 
-const navLinks = document.querySelectorAll(".link");
-
-// Add an event listener for scroll events
-window.addEventListener("scroll", () => {
-  const fromTop = window.scrollY;
+window.addEventListener("load", function () {
+  const navLinks = document.querySelectorAll(".link");
 
   navLinks.forEach((link) => {
-    const section = document.querySelector(link.getAttribute("href"));
+    link.addEventListener("click", () => {
+      navLinks.forEach((navLink) => navLink.classList.remove("active"));
 
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
       link.classList.add("active");
-    } else {
-      link.classList.remove("active");
-    }
+    });
   });
 });
 
 //mobile nav
+const body = document.querySelector("body");
 const mobileNavToggle = document.querySelector(".mobile-nav__toggle");
 const mobileNav = document.querySelector(".mobile-nav__menu");
 const mobileNavOpenBtn = document.querySelector(".mobile-nav__bars");
@@ -31,9 +24,14 @@ const toggleMobileNav = () => {
   mobileNavOpenBtn.classList.toggle("active");
   mobileNavCloseBtn.classList.toggle("active");
   mobileNav.classList.toggle("active");
+  body.classList.toggle("active");
 };
 
 mobileNavToggle.addEventListener("click", toggleMobileNav);
+
+links.forEach((link) => {
+  link.addEventListener("click", toggleMobileNav);
+});
 
 // ----------------------------------------------------------------------------------------------
 //skills
@@ -78,20 +76,7 @@ skillsSelectors.forEach((selector) => {
 renderSkillsToDisplay("HTML");
 
 // --------------------
-//slider
-const swiper = new Swiper(".mySwiper", {
-  effect: "cube",
-  grabCursor: true,
-  cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+//section observer
 
 const imgsToAppear = document.querySelectorAll(".projects__img-container");
 const txtToAppear = document.querySelectorAll(".projects__text-container");
