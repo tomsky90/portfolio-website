@@ -1,3 +1,25 @@
+//links
+
+const navLinks = document.querySelectorAll(".link");
+
+// Add an event listener for scroll events
+window.addEventListener("scroll", () => {
+  const fromTop = window.scrollY;
+
+  navLinks.forEach((link) => {
+    const section = document.querySelector(link.getAttribute("href"));
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
+
 //mobile nav
 const mobileNavToggle = document.querySelector(".mobile-nav__toggle");
 const mobileNav = document.querySelector(".mobile-nav__menu");
