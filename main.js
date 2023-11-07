@@ -58,18 +58,19 @@ const skills = {
 };
 
 const skillsDisplay = document.querySelector(".skills__skill-display");
+const skillsSection = document.querySelector("#skills").offsetTop;
 const skillsSelectors = [...document.querySelectorAll(".skills__skill-tile")];
 
 const renderSkillsToDisplay = (selector) => {
   const select = selector.toLowerCase();
   skillsDisplay.textContent = skills[select];
-  console.log(select);
 };
 
 skillsSelectors.forEach((selector) => {
   selector.addEventListener("click", () => {
     const text = selector.childNodes[3].textContent;
     renderSkillsToDisplay(text);
+    window.scrollTo(0, skillsSection);
   });
 });
 
