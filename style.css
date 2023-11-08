@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 :root {
   /* colors */
   --theme-color: #5d5cdc;
@@ -15,10 +17,6 @@
   --tablet-screen: 1023px;
   --small-desktop-screen: 1280px;
   --desktop-screen: 1440px;
-}
-
-body.active {
-  overflow: hidden;
 }
 
 * {
@@ -58,6 +56,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 .header {
@@ -395,7 +397,7 @@ body {
 
 .skills__img-tile {
   width: 55%;
-  background-image: url(./imgs/screen.png);
+  background-image: url(./imgs/screen-svg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
