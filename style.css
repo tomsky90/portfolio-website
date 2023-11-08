@@ -56,7 +56,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
@@ -106,6 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -moz-column-gap: 15px;
   column-gap: 15px;
 }
 
@@ -481,6 +481,7 @@ body {
   width: 40%;
   display: flex;
   flex-wrap: wrap;
+  -moz-column-gap: 20px;
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -565,14 +566,8 @@ body {
   padding: 80px 15px;
   border-radius: 8px;
   margin-bottom: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding-top: 100px;
 }
@@ -591,9 +586,6 @@ body {
 }
 
 .projects__project-container:nth-child(odd) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
@@ -625,8 +617,6 @@ body {
   padding: 5px 30px;
   border-radius: 9999px;
   margin-right: 10px;
-  -webkit-transition: linear 0.2s;
-  -o-transition: linear 0.2s;
   transition: linear 0.2s;
 }
 
@@ -637,8 +627,6 @@ body {
 
 .projects__text-container {
   opacity: 0;
-  -webkit-transition: linear 0.5s;
-  -o-transition: linear 0.5s;
   transition: linear 0.5s;
   width: 40%;
 }
@@ -657,8 +645,6 @@ body {
   opacity: 0;
   width: 40%;
   margin-bottom: 50px;
-  -webkit-transition: linear 0.5s;
-  -o-transition: linear 0.5s;
   transition: linear 0.5s;
 }
 
@@ -697,7 +683,6 @@ form h2 {
 /* contact */
 
 form {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #333;
   color: white;
@@ -745,7 +730,6 @@ form {
 }
 
 input {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 20px;
   margin-bottom: 20px;
@@ -767,7 +751,6 @@ input:focus {
 }
 
 textarea {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 100%;
   max-width: 100%;
@@ -781,14 +764,8 @@ textarea:focus {
 }
 
 .btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -822,8 +799,6 @@ form button:hover {
 
 .social-links-container__link-container {
   margin-right: 10px;
-  -webkit-transition: ease-in-out 0.2s;
-  -o-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }
 
@@ -849,14 +824,8 @@ form button:hover {
 /* footer */
 footer {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: var(--background-color);
 }
