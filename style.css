@@ -394,7 +394,46 @@ body.active {
 .hero-section__social-link-img:hover {
   scale: 1.2;
 }
-/* -------------------------------------------------- */
+/* ---------------------ANOUT-------------------------------- */
+
+.about {
+  display: flex;
+  padding: 100px 0;
+  justify-content: space-between;
+}
+
+.about__img-tile {
+  width: 45%;
+}
+
+.about__image {
+  width: 100%;
+}
+
+.about__text-tile {
+  width: 40%;
+}
+
+.about__text {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.about__link {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--orange);
+  border-radius: 8px;
+}
+
+.about__link:hover {
+  background-color: #fff;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+/* ---------------------SKILS----------------------------- */
 
 .skills {
   padding-top: 100px;
@@ -420,6 +459,10 @@ body.active {
   .skills__content-wrapper {
     flex-direction: column;
   }
+}
+
+.skills__pop-up {
+  display: none;
 }
 
 .skills__skills-tiles-wrapper {
