@@ -36,7 +36,14 @@ links.forEach((link) => {
 // ----------------------------------------------------------------------------------------------
 //skills
 const skills = {
-  html: "To ensure your website is easily discoverable and user-friendly, I excel in crafting semantic and well-organized HTML code. I prioritize readability and accessibility, focusing on header hierarchy, section tags, lists, hyperlinks, and forms. I'm also proficient in advanced techniques like multimedia embedding, dynamic forms, and integrating external libraries and scripts for enhanced functionality",
+  html: [
+    "Good understanding of fundamental concepts such as variables, data types, operators, control structures, loops, and functions.",
+    "DOM Manipulation - Experience in accessing and manipulating the Document Object Model (DOM) efficiently",
+    "Knowledge of methods like getElementById, querySelector, addEventListener, etc",
+    "Asynchronous JavaScript",
+    "Understanding of AJAX and fetching data from APIs",
+    "ES6+ - Familiarity with modern JavaScript features introduced in ECMAScript 6 and later, such as arrow functions, template literals, destructuring, spread/rest operators, and classes.",
+  ],
   css: "I have extensive knowledge of CSS, proficient in creating responsive layouts, optimizing styles for consistent cross-device appearance, and crafting advanced visual effects like animations, transitions, shadows, and gradients. I prioritize well-organized and optimized CSS code in user interface development",
   javascript:
     "I possess a strong command of key JavaScript concepts and programming techniques, including DOM manipulation, event handling, asynchronous programming, and user interface development. With these skills, I can design and develop responsive, interactive websites and applications capable of interfacing with third-party APIs. My JavaScript proficiency enables me to write efficient, maintainable, and scalable code",
@@ -57,17 +64,21 @@ const skills = {
     "As part of my volunteering efforts, I have had the opportunity to learn and work with WordPress. We are currently developing a new WordPress theme for a charity project. This experience has allowed me to gain valuable insights into WordPress, its theme development, and customization. I am eager to further enhance my skills and contribute effectively to this meaningful cause",
 };
 
-const skillsDisplay = document.querySelector(".skills__skill-display");
+const skillsTextDisplay = document.querySelector(".skills__skill-display");
+const blur = document.querySelector(".blur");
+const skillsDisplay = document.querySelector(".skills__pop-up");
 const skillsSection = document.querySelector("#skills").offsetTop;
 const skillsSelectors = [...document.querySelectorAll(".skills__skill-tile")];
 
 const renderSkillsToDisplay = (selector) => {
   const select = selector.toLowerCase();
-  skillsDisplay.textContent = skills[select];
+  skillsTextDisplay.textContent = skills[select];
 };
 
 skillsSelectors.forEach((selector) => {
   selector.addEventListener("click", () => {
+    blur.classList.add("active");
+    skillsDisplay.classList.add("active");
     const text = selector.childNodes[3].textContent;
     renderSkillsToDisplay(text);
     window.scrollTo(0, skillsSection);
