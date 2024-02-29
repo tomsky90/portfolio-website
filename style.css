@@ -512,6 +512,24 @@ body.active {
   display: block;
 }
 
+.skills__close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
+  border-color: var(--theme-color);
+  border-radius: 4px;
+}
+
+.skills__close-btn:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.skills__pop-up-heading {
+  margin-bottom: 20px;
+}
+
 .skills__skills-tiles-wrapper {
   width: 80%;
   display: flex;

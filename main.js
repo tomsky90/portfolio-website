@@ -45,8 +45,14 @@ const skills = {
     "ES6+ - Familiarity with modern JavaScript features introduced in ECMAScript 6 and later, such as arrow functions, template literals, destructuring, spread/rest operators, and classes.",
   ],
   css: "I have extensive knowledge of CSS, proficient in creating responsive layouts, optimizing styles for consistent cross-device appearance, and crafting advanced visual effects like animations, transitions, shadows, and gradients. I prioritize well-organized and optimized CSS code in user interface development",
-  javascript:
-    "I possess a strong command of key JavaScript concepts and programming techniques, including DOM manipulation, event handling, asynchronous programming, and user interface development. With these skills, I can design and develop responsive, interactive websites and applications capable of interfacing with third-party APIs. My JavaScript proficiency enables me to write efficient, maintainable, and scalable code",
+  javascript: [
+    "Good understanding of fundamental concepts such as variables, data types, operators, control structures, loops, and functions.",
+    "DOM Manipulation - Experience in accessing and manipulating the Document Object Model (DOM) efficiently",
+    "Knowledge of methods like getElementById, querySelector, addEventListener, etc",
+    "Asynchronous JavaScript",
+    "Understanding of AJAX and fetching data from APIs",
+    "ES6+ - Familiarity with modern JavaScript features introduced in ECMAScript 6 and later, such as arrow functions, template literals, destructuring, spread/rest operators, and classes.",
+  ],
   bootstrap:
     "With bootstrap, I can quickly create responsive and visually appealing user interfaces. Bootstrap ensures consistent look for UI's built with it, thanks to its support for all major browsers. Additionaly I can customize styling using Sass, allowing me to create personalized and unique interface designs",
   git: "I have a strong grasp of fundamental Git concepts, such as repositories, branches, commits, pull requests, and merging changes. I can proficiently create, clone, and manage Git repositories, both locally and on remote servers, and effectively utilize branches to develop and manage various project versions, particularly on platforms like GitHub",
@@ -64,7 +70,9 @@ const skills = {
     "As part of my volunteering efforts, I have had the opportunity to learn and work with WordPress. We are currently developing a new WordPress theme for a charity project. This experience has allowed me to gain valuable insights into WordPress, its theme development, and customization. I am eager to further enhance my skills and contribute effectively to this meaningful cause",
 };
 
+const skillsCloseBtn = document.querySelector(".skills__close-btn");
 const skillsTextDisplay = document.querySelector(".skills__skill-display");
+const skillsHeading = document.querySelector(".skills__pop-up-heading");
 const blur = document.querySelector(".blur");
 const skillsDisplay = document.querySelector(".skills__pop-up");
 const skillsSection = document.querySelector("#skills").offsetTop;
@@ -72,8 +80,14 @@ const skillsSelectors = [...document.querySelectorAll(".skills__skill-tile")];
 
 const renderSkillsToDisplay = (selector) => {
   const select = selector.toLowerCase();
+  skillsHeading.textContent = selector;
   skillsTextDisplay.textContent = skills[select];
 };
+
+skillsCloseBtn.addEventListener("click", () => {
+  blur.classList.remove("active");
+  skillsDisplay.classList.remove("active");
+});
 
 skillsSelectors.forEach((selector) => {
   selector.addEventListener("click", () => {
