@@ -508,6 +508,14 @@ body.active {
   z-index: 9;
 }
 
+@media only screen and (max-width: 768px) {
+  .skills__pop-up {
+    position: absolute;
+    width: 95%;
+    padding-left: 40px;
+  }
+}
+
 .skills__pop-up.active {
   display: block;
 }
@@ -538,6 +546,11 @@ body.active {
   -moz-column-gap: 20px;
   column-gap: 20px;
   row-gap: 20px;
+}
+
+.skills__skill-display {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 1280px) {

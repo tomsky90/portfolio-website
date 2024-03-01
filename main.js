@@ -37,14 +37,29 @@ links.forEach((link) => {
 //skills
 const skills = {
   html: [
-    "Good understanding of fundamental concepts such as variables, data types, operators, control structures, loops, and functions.",
-    "DOM Manipulation - Experience in accessing and manipulating the Document Object Model (DOM) efficiently",
-    "Knowledge of methods like getElementById, querySelector, addEventListener, etc",
-    "Asynchronous JavaScript",
-    "Understanding of AJAX and fetching data from APIs",
-    "ES6+ - Familiarity with modern JavaScript features introduced in ECMAScript 6 and later, such as arrow functions, template literals, destructuring, spread/rest operators, and classes.",
+    "Proficiency in writing well-structured HTML markup.",
+    "Understanding of HTML elements, attributes, and their semantic meaning.",
+    "Knowledge of new HTML5 elements like <header>, <footer>, <nav>, <section>, <article>, <aside>, etc.",
+    "Familiarity with HTML5 APIs such as localStorage, sessionStorage, Geolocation, Canvas, etc.",
+    "Experience in creating HTML forms and handling form submissions.",
+    "Understanding of input types, attributes, and form validation techniques using HTML5 attributes like required, pattern, min, max, etc.",
+    "Knowledge of making forms and interactive elements accessible to users with disabilities.",
+    "Understanding of HTML elements that impact SEO, such as <title>, <meta> tags, heading hierarchy (<h1> to <h6>), alt attributes for images, etc.",
   ],
-  css: "I have extensive knowledge of CSS, proficient in creating responsive layouts, optimizing styles for consistent cross-device appearance, and crafting advanced visual effects like animations, transitions, shadows, and gradients. I prioritize well-organized and optimized CSS code in user interface development",
+  css: [
+    "Proficiency in writing CSS rules to style HTML elements.",
+    "Understanding of CSS selectors, properties, and values.",
+    "Knowledge of various layout techniques including flexbox and CSS Grid.",
+    "Ability to create responsive and adaptive layouts using CSS.",
+    "Experience in designing responsive websites that adapt to different screen sizes and devices.",
+    "Understanding of media queries, viewport settings, and fluid layouts.",
+    "Experience using Sass",
+    "Proficiency in using features such as variables, mixins, nesting, and inheritance to write maintainable CSS code.",
+    "Experience with popular CSS framework Bootstrap.",
+    "Understanding of CSS animations and transitions to add interactivity and visual effects to web interfaces.",
+    "Proficiency in using keyframe animations, transitions, and CSS transform properties.",
+    "Familiarity with CSS methodologies like BEM (Block Element Modifier).",
+  ],
   javascript: [
     "Good understanding of fundamental concepts such as variables, data types, operators, control structures, loops, and functions.",
     "DOM Manipulation - Experience in accessing and manipulating the Document Object Model (DOM) efficiently",
@@ -53,21 +68,62 @@ const skills = {
     "Understanding of AJAX and fetching data from APIs",
     "ES6+ - Familiarity with modern JavaScript features introduced in ECMAScript 6 and later, such as arrow functions, template literals, destructuring, spread/rest operators, and classes.",
   ],
-  bootstrap:
-    "With bootstrap, I can quickly create responsive and visually appealing user interfaces. Bootstrap ensures consistent look for UI's built with it, thanks to its support for all major browsers. Additionaly I can customize styling using Sass, allowing me to create personalized and unique interface designs",
-  git: "I have a strong grasp of fundamental Git concepts, such as repositories, branches, commits, pull requests, and merging changes. I can proficiently create, clone, and manage Git repositories, both locally and on remote servers, and effectively utilize branches to develop and manage various project versions, particularly on platforms like GitHub",
-  react:
-    "I thoroughly enjoy working with React as it empowers me to effortlessly develop advanced, responsive, and interactive applications. I am well-versed in core concepts, including creating components, managing state, utilizing hooks, and implementing routing for single-page applications. Furthermore, my expertise extends to integrating external libraries and seamless communication with third-party APIs",
-  sass: "I have a strong grasp of Sass/Scss syntax and can proficiently create nested selectors, variables, functions, and mixins. I find Scss particularly advantageous for implementing the BEM methodology, thanks to its support for nested selectors. Leveraging Sass/Scss enables me to write modular and efficient CSS code that's both easy to maintain and extend",
-  nodejs:
-    "I have a foundational knowledge of Node.js, primarily focusing on server-side development and API creation. While my experience is at a basic level, I am familiar with asynchronous programming and event-driven architecture. I have practical experience working with MongoDB, npm packages, and utilizing Express.js for web server development. I look forward to further expanding my expertise in Node.js in future projects",
-  mongodb:
-    "I am proficient in creating data schemas and conducting various data operations, including updates, insertions, and deletions, using MongoDB Atlas and Mongoose. I am also committed to continually enhancing and expanding my skills in this area",
-  other:
-    "In addition to the previously mentioned skills, I have a basic knowledge of image and video editing, and I'm familiar with tools like GIMP and Photopea. I can perform basic tasks such as cropping, optimization, and format conversion",
-  php: "I am currently volunteering on a project to build a new WordPress theme for a charity using PHP, among other technologies. Through this experience, I have acquired a foundational understanding of PHP and its basics. I am enthusiastic about further expanding my expertise in this programming language",
-  wordpress:
-    "As part of my volunteering efforts, I have had the opportunity to learn and work with WordPress. We are currently developing a new WordPress theme for a charity project. This experience has allowed me to gain valuable insights into WordPress, its theme development, and customization. I am eager to further enhance my skills and contribute effectively to this meaningful cause",
+  bootstrap: [
+    "Proficiency in utilizing Bootstrap's responsive grid system to create flexible and responsive layouts.",
+    "Understanding of grid classes (container, row, col-*) and their usage for building multi-column layouts.",
+    "Experience in leveraging Bootstrap's pre-styled components such as buttons, forms, navigation bars, modals, etc.",
+    "Knowledge of how to design responsive websites using Bootstrap's built-in responsive utilities and grid system.",
+  ],
+  git: [
+    "Proficiency in using Git and GitHub for version control, including branching, merging, committing changes, and resolving conflicts.",
+    "Experience in creating, cloning, forking, and managing repositories on GitHub.",
+    "Familiarity with GitHub's collaboration features such as pull requests, code reviews, and issue tracking.",
+    "Experience in collaborating with team members on GitHub.",
+    "Knowledge of setting up and deploying websites using GitHub Pages.",
+  ],
+  react: [
+    "Proficiency in React's core concepts such as components, props, state, and the component lifecycle.",
+    "Understanding of JSX syntax and how to write React components using JSX.",
+    "Experience in building applications with a component-based architecture using React.",
+    "Ability to create reusable and composable components to efficiently manage UI elements.",
+    "Knowledge of state management in React using built-in state and props, as well as external state management libraries like Redux",
+    "Experience in managing complex application state and data flow patterns.",
+    "Familiarity with React Hooks for managing state, side effects, and other React features without writing class components.",
+    "Proficiency in using built-in hooks like useState, useEffect, useContext, and custom hooks.",
+    "Experience in implementing client-side routing in React applications using React Router.",
+    "Understanding of route configuration, nested routes, route parameters, and navigation.",
+    "Proficiency in fetching data from APIs and integrating external data sources into React applications using methods like fetch or Axios.",
+  ],
+
+  sass: [
+    "Proficiency in writing Sass code using nested syntax, variables, mixins, and functions.",
+    "Understanding of Sass features such as partials, imports, and extends.",
+    "Experience in organizing CSS code into modular and reusable Sass partials.",
+    "Ability to use Sass features like mixins and placeholders.",
+    "Knowledge of using variables to store reusable values like colors, font sizes, and spacing.",
+    "Proficiency in creating and using mixins to encapsulate styles and apply them to multiple selectors.",
+    "Understanding of Sass's nested selector syntax for writing more concise and maintainable CSS.",
+  ],
+  nodejs: [
+    "Proficiency in server-side JavaScript development using Node.js runtime.",
+    "Experience in building web applications and APIs using the Express.js framework.",
+    "Ability to create routes, handle requests, and manage middleware in Express.js applications.",
+    "Knowledge of npm (Node Package Manager) for managing dependencies and packages in Node.js projects.",
+    "Familiarity with package.json configuration, npm scripts, and dependency versioning.",
+    "Understanding of asynchronous programming patterns in Node.js, including callbacks, Promises, and async/await.",
+    "Knowledge of integrating Node.js applications with databases like MongoDB",
+    "Proficiency in designing and implementing RESTful APIs in Node.js applications.",
+    "Understanding of HTTP methods, status codes, request/response handling, and API documentation.",
+    "Experience in implementing authentication and authorization mechanisms in Node.js applications using JWT (JSON Web Tokens).",
+    "Ability to handle errors and implement error handling middleware in Node.js applications.",
+  ],
+  // mongodb:
+  //   "I am proficient in creating data schemas and conducting various data operations, including updates, insertions, and deletions, using MongoDB Atlas and Mongoose. I am also committed to continually enhancing and expanding my skills in this area",
+  // other:
+  //   "In addition to the previously mentioned skills, I have a basic knowledge of image and video editing, and I'm familiar with tools like GIMP and Photopea. I can perform basic tasks such as cropping, optimization, and format conversion",
+  // php: "I am currently volunteering on a project to build a new WordPress theme for a charity using PHP, among other technologies. Through this experience, I have acquired a foundational understanding of PHP and its basics. I am enthusiastic about further expanding my expertise in this programming language",
+  // wordpress:
+  //   "As part of my volunteering efforts, I have had the opportunity to learn and work with WordPress. We are currently developing a new WordPress theme for a charity project. This experience has allowed me to gain valuable insights into WordPress, its theme development, and customization. I am eager to further enhance my skills and contribute effectively to this meaningful cause",
 };
 
 const skillsCloseBtn = document.querySelector(".skills__close-btn");
@@ -79,9 +135,14 @@ const skillsSection = document.querySelector("#skills").offsetTop;
 const skillsSelectors = [...document.querySelectorAll(".skills__skill-tile")];
 
 const renderSkillsToDisplay = (selector) => {
-  const select = selector.toLowerCase();
+  skillsTextDisplay.textContent = "";
   skillsHeading.textContent = selector;
-  skillsTextDisplay.textContent = skills[select];
+  const skillSelector = selector.toLowerCase();
+  skills[skillSelector].forEach((item) => {
+    const listElement = document.createElement("li");
+    listElement.textContent = item;
+    skillsTextDisplay.appendChild(listElement);
+  });
 };
 
 skillsCloseBtn.addEventListener("click", () => {
