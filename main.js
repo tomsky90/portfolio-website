@@ -189,7 +189,20 @@ skillsSelectors.forEach((selector) => {
 
 renderSkillsToDisplay("HTML");
 
-// --------------------
+// --------------------   Projects -----------------------
+
+const alert = document.querySelector(".projects__alert");
+const alertCloseBtn = document.querySelector(".projects__alert-close-btn");
+const showAllertBtn = document.querySelector(".projects-link--btn");
+
+showAllertBtn.addEventListener("click", () => {
+  alert.classList.add("active");
+});
+
+alertCloseBtn.addEventListener("click", () => {
+  alert.classList.remove("active");
+});
+
 //section observer
 
 const imgsToAppear = document.querySelectorAll(".projects__img-container");
