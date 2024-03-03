@@ -922,6 +922,15 @@ form button:hover {
   line-height: 2;
 }
 
+.social-links-container__image-container {
+  width: 100%;
+}
+
+.social-links-container__image {
+  width: 90%;
+  margin-top: 40px;
+}
+
 @media only screen and (max-width: 768px) {
   .social-links-container {
     width: 100%;
