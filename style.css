@@ -148,6 +148,12 @@ body.active {
   color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .link-wrapper--contact-link {
+    display: none;
+  }
+}
+
 .desktop-nav__link:hover .desktop-nav__dropdown-arrow {
   transform: rotate(-180deg);
 }

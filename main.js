@@ -117,13 +117,40 @@ const skills = {
     "Experience in implementing authentication and authorization mechanisms in Node.js applications using JWT (JSON Web Tokens).",
     "Ability to handle errors and implement error handling middleware in Node.js applications.",
   ],
-  // mongodb:
-  //   "I am proficient in creating data schemas and conducting various data operations, including updates, insertions, and deletions, using MongoDB Atlas and Mongoose. I am also committed to continually enhancing and expanding my skills in this area",
-  // other:
-  //   "In addition to the previously mentioned skills, I have a basic knowledge of image and video editing, and I'm familiar with tools like GIMP and Photopea. I can perform basic tasks such as cropping, optimization, and format conversion",
-  // php: "I am currently volunteering on a project to build a new WordPress theme for a charity using PHP, among other technologies. Through this experience, I have acquired a foundational understanding of PHP and its basics. I am enthusiastic about further expanding my expertise in this programming language",
-  // wordpress:
-  //   "As part of my volunteering efforts, I have had the opportunity to learn and work with WordPress. We are currently developing a new WordPress theme for a charity project. This experience has allowed me to gain valuable insights into WordPress, its theme development, and customization. I am eager to further enhance my skills and contribute effectively to this meaningful cause",
+  mongodb: [
+    "Understanding of MongoDB's document-oriented data model, collections, and documents.",
+    "Experience in performing CRUD (Create, Read, Update, Delete) operations on MongoDB documents using methods like insert, find, update, and remove.",
+    "Knowledge of MongoDB's query language and operators for filtering, sorting, and aggregating data.",
+    "Ability to design MongoDB schemas and data models based on application requirements.",
+    "Proficiency in integrating MongoDB with Node.js and Express.js applications using MongoDB Node.js drivers like mongoose.",
+    "Experience in building RESTful APIs and web applications with MongoDB as the database backend.",
+    "Understanding of MongoDB deployment options such as self-managed deployments, MongoDB Atlas.",
+  ],
+  figma: [
+    "Proficiency in designing user interfaces (UI) for web and mobile applications using Figma.",
+    "Familiarity with Figma's interface, tools, and features for creating and editing designs.",
+    "Experience in using tools such as frames, shapes, text, vector drawing, and prototyping features",
+    "Understanding of responsive design principles and techniques in Figma for designing layouts that adapt to different screen sizes and devices.",
+    "Ability to export assets in different formats and sizes for development.",
+  ],
+  other: [
+    "Basic knowledge of image and video editing.",
+    "Familiarity with tools like GIMP and Photopea.",
+    "Ability to perform basic tasks such as cropping, optimization, and format conversion.",
+  ],
+  php: [
+    "Proficiency in PHP programming language fundamentals such as variables, data types, operators, control structures, and functions.",
+    "Understanding of PHP's syntax, conventions, and best practices.",
+    "Experience in building dynamic web applications and websites using PHP.",
+    "Ability to generate dynamic content, handle form submissions, and interact with databases.",
+    "Experience in building Wordpress themes.",
+  ],
+  wordpress: [
+    "Proficiency in working with WordPress.",
+    "Understanding of WordPress's architecture, features, and terminology such as posts, pages, themes, and plugins.",
+    "Experience in developing custom WordPress themes from scratch or customizing existing themes.",
+    "Ability to create responsive, cross-browser compatible, and SEO-friendly WordPress themes using HTML, CSS, JavaScript, and PHP.",
+  ],
 };
 
 const skillsCloseBtn = document.querySelector(".skills__close-btn");
