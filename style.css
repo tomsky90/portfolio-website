@@ -273,7 +273,7 @@ body.active {
 .hero-secttion__background-img {
   width: 35px;
   position: absolute;
-  opacity: 30%;
+  opacity: 20%;
 }
 
 .hero-secttion__background-img--0 {
@@ -327,12 +327,18 @@ body.active {
 @media only screen and (max-width: 768px) {
   .hero-secttion__background-img--2 {
     top: 40%;
+    left: 70%;
   }
 
   .hero-secttion__background-img--5 {
     top: 70%;
     left: 80%;
     width: 60px;
+  }
+
+  .hero-secttion__background-img--7 {
+    top: 55%;
+    left: 20%;
   }
 }
 
@@ -441,12 +447,12 @@ body.active {
   }
 
   .about__text-tile {
-    width: 80%;
+    width: 100%;
     margin-top: 50px;
   }
 
   .about__img-tile {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -716,6 +722,7 @@ body.active {
 
 .projects-link--btn {
   border: 2px solid var(--theme-color);
+  margin-right: 10px;
   padding: 5px 30px;
   color: var(--theme-color);
   background-color: #fff;
