@@ -158,8 +158,9 @@ const skillsTextDisplay = document.querySelector(".skills__skill-display");
 const skillsHeading = document.querySelector(".skills__pop-up-heading");
 const blur = document.querySelector(".blur");
 const skillsDisplay = document.querySelector(".skills__pop-up");
-const skillsSection = document.querySelector("#skills").offsetTop;
+const skillsSection = document.querySelector("#skills");
 const skillsSelectors = [...document.querySelectorAll(".skills__skill-tile")];
+const aboutMeSection = document.querySelector("#about");
 
 const renderSkillsToDisplay = (selector) => {
   skillsTextDisplay.textContent = "";
@@ -179,11 +180,15 @@ skillsCloseBtn.addEventListener("click", () => {
 
 skillsSelectors.forEach((selector) => {
   selector.addEventListener("click", () => {
+    console.log(aboutMeSection.clientHeight);
     blur.classList.add("active");
     skillsDisplay.classList.add("active");
     const text = selector.childNodes[3].textContent;
     renderSkillsToDisplay(text);
-    window.scrollTo(0, skillsSection);
+    skillsSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   });
 });
 

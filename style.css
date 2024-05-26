@@ -367,7 +367,7 @@ body.active {
 
 .hero-section__link {
   position: relative;
-  z-index: 9;
+  z-index: 5;
   padding: 10px 20px;
   background-color: var(--orange);
   color: #fff;
@@ -511,7 +511,7 @@ body.active {
 
 .skills__pop-up {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
