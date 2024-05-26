@@ -185,7 +185,7 @@ skillsSelectors.forEach((selector) => {
     skillsDisplay.classList.add("active");
     const text = selector.childNodes[3].textContent;
     renderSkillsToDisplay(text);
-    skillsSection.scrollIntoView({
+    skillsDisplay.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
